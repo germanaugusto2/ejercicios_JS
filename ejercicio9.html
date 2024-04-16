@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuadrado de asteriscos</title>
+</head>
+<body>
+
+<script>
+const lado = 5;
+
+let primeraFila = "";
+for (let i = 0; i < lado; i++) {
+    primeraFila += "*";
+}
+console.log(primeraFila);
+
+for (let i = 0; i < lado - 2; i++) {
+    let filaIntermedia = "*";
+    for (let j = 0; j < lado - 2; j++) {
+        filaIntermedia += " ";
+    }
+    filaIntermedia += "*";
+    console.log(filaIntermedia);
+}
+
+let ultimaFila = "";
+for (let i = 0; i < lado; i++) {
+    ultimaFila += "*";
+}
+console.log(ultimaFila);
+</script>
+
+</body>
+</html>

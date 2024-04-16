@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figura con asteriscos</title>
+</head>
+<body>
+
+<script>
+const altura = 9; 
+
+for (let i = 0; i < altura / 2; i++) {
+    let fila = "";
+    for (let j = 0; j < altura / 2 - i; j++) {
+        fila += " ";
+    }
+    for (let k = 0; k < 2 * i + 1; k++) {
+        fila += "*";
+    }
+    console.log(fila);
+}
+
+for (let i = altura / 2; i >= 0; i--) {
+    let fila = "";
+    for (let j = 0; j < altura / 2 - i; j++) {
+        fila += " ";
+    }
+    for (let k = 0; k < 2 * i + 1; k++) {
+        fila += "*";
+    }
+    console.log(fila);
+}
+</script>
+
+</body>
+</html>

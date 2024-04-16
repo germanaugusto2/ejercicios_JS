@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcular media de notas</title>
+</head>
+<body>
+
+<script>
+function pedirNota(numero) {
+    let input;
+    let nota;
+    do {
+        input = prompt("Por favor, introduce la nota " + numero + ":");
+        nota = parseFloat(input); 
+    } while (isNaN(nota)); 
+    return nota;
+}
+
+let nota1 = pedirNota(1);
+let nota2 = pedirNota(2);
+let nota3 = pedirNota(3);
+
+let media = (nota1 + nota2 + nota3) / 3;
+
+if (media < 3) {
+    alert("Estás reprobado con una media de " + media.toFixed(2));
+} else {
+    alert("Estás aprobado con una media de " + media.toFixed(2));
+}
+</script>
+
+</body>
+</html>
+

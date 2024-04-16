@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verificar si un texto es numérico o una cadena</title>
+</head>
+<body>
+
+<script>
+// Pedimos al usuario que introduzca un texto mediante prompt
+let texto = prompt("Por favor, introduce un texto:");
+
+// Verificamos si el texto es un número utilizando isNaN()
+if (!isNaN(texto)) {
+    // Si es un número, mostramos un alert indicando que es numérico
+    alert("El texto introducido es un valor numérico.");
+} else {
+    // Si no es un número, mostramos un alert indicando que es una cadena
+    alert("El texto introducido es una cadena.");
+}
+</script>
+
+</body>
+</html>
+
